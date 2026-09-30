@@ -1,0 +1,200 @@
+{
+    "project_title": "ThyroPredict \u2014 AI-Based Thyroid Abnormality Prediction System",
+    "best_model": "Random Forest",
+    "metrics": {
+        "Accuracy": 1.0,
+        "Precision": 1.0,
+        "Recall": 1.0,
+        "F1_Score": 1.0,
+        "ROC_AUC": 1.0,
+        "Confusion_Matrix": [
+            [
+                685,
+                0
+            ],
+            [
+                0,
+                58
+            ]
+        ]
+    },
+    "all_models_evaluated": {
+        "Logistic Regression": {
+            "Accuracy": 0.9798115746971736,
+            "Precision": 0.8307692307692308,
+            "Recall": 0.9310344827586207,
+            "F1_Score": 0.8780487804878049,
+            "ROC_AUC": 0.9955449282657941,
+            "Confusion_Matrix": [
+                [
+                    674,
+                    11
+                ],
+                [
+                    4,
+                    54
+                ]
+            ]
+        },
+        "Decision Tree": {
+            "Accuracy": 0.9959623149394348,
+            "Precision": 0.9661016949152542,
+            "Recall": 0.9827586206896551,
+            "F1_Score": 0.9743589743589743,
+            "ROC_AUC": 0.9892524540649384,
+            "Confusion_Matrix": [
+                [
+                    683,
+                    2
+                ],
+                [
+                    1,
+                    57
+                ]
+            ]
+        },
+        "Random Forest": {
+            "Accuracy": 1.0,
+            "Precision": 1.0,
+            "Recall": 1.0,
+            "F1_Score": 1.0,
+            "ROC_AUC": 1.0,
+            "Confusion_Matrix": [
+                [
+                    685,
+                    0
+                ],
+                [
+                    0,
+                    58
+                ]
+            ]
+        },
+        "K-Nearest Neighbors": {
+            "Accuracy": 0.946164199192463,
+            "Precision": 0.875,
+            "Recall": 0.3620689655172414,
+            "F1_Score": 0.5121951219512195,
+            "ROC_AUC": 0.8027561036999749,
+            "Confusion_Matrix": [
+                [
+                    682,
+                    3
+                ],
+                [
+                    37,
+                    21
+                ]
+            ]
+        }
+    },
+    "feature_columns": [
+        "age",
+        "sex",
+        "on_thyroxine",
+        "query_on_thyroxine",
+        "on_antithyroid_medication",
+        "sick",
+        "pregnant",
+        "thyroid_surgery",
+        "I131_treatment",
+        "query_hypothyroid",
+        "query_hyperthyroid",
+        "lithium",
+        "goitre",
+        "tumor",
+        "hypopituitary",
+        "psych",
+        "TSH",
+        "T3",
+        "TT4",
+        "T4U",
+        "FTI"
+    ],
+    "numerical_columns": [
+        "age",
+        "TSH",
+        "T3",
+        "TT4",
+        "T4U",
+        "FTI"
+    ],
+    "categorical_columns": [
+        "sex",
+        "on_thyroxine",
+        "query_on_thyroxine",
+        "on_antithyroid_medication",
+        "sick",
+        "pregnant",
+        "thyroid_surgery",
+        "I131_treatment",
+        "query_hypothyroid",
+        "query_hyperthyroid",
+        "lithium",
+        "goitre",
+        "tumor",
+        "hypopituitary",
+        "psych"
+    ],
+    "target_classes": {
+        "0": "Normal",
+        "1": "Thyroid Abnormality"
+    },
+    "top_features": [
+        [
+            "TSH",
+            0.5895498870714355
+        ],
+        [
+            "FTI",
+            0.1455639614232064
+        ],
+        [
+            "TT4",
+            0.10613430724456646
+        ],
+        [
+            "T3",
+            0.046882401519893105
+        ],
+        [
+            "T4U",
+            0.019900671945413038
+        ],
+        [
+            "age",
+            0.019549538561737866
+        ],
+        [
+            "on_thyroxine_f",
+            0.01767438545772702
+        ],
+        [
+            "on_thyroxine_t",
+            0.012079559752205237
+        ],
+        [
+            "sex_F",
+            0.006017944249620656
+        ],
+        [
+            "query_hypothyroid_t",
+            0.005844568529062118
+        ]
+    ],
+    "cleaning_statistics": {
+        "initial_shape": [
+            3772,
+            30
+        ],
+        "final_shape": [
+            3711,
+            23
+        ],
+        "duplicates_removed": 61,
+        "invalid_ages_handled": 1,
+        "normal_count": 3420,
+        "abnormal_count": 291,
+        "abnormal_percentage": 7.84
+    }
+}
